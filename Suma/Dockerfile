@@ -1,4 +1,3 @@
-FROM JAVA:8
-COPY ./deploy/Suma.war .
-ENTRYPOINT java -jar Suma.war
+FROM tomcat:7-jre8-alpine
+ADD Suma.war /usr/local/tomcat/webapps/Suma.war
 EXPOSE 8080
