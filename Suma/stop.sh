@@ -1,3 +1,3 @@
-docker stop Suma
-docker rm Suma
-docker image rm Suma
+docker stop servicio
+docker rm servicio
+docker image rm servicio
