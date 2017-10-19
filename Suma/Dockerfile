@@ -1,4 +1,4 @@
-FROM openjdk-8u111-jre
-COPY deploy/Suma.war .
+FROM JAVA:8
+COPY ./deploy/Suma.war .
 ENTRYPOINT java -jar Suma.war
 EXPOSE 8080
