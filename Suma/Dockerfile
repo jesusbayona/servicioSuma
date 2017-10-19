@@ -1,3 +1,4 @@
 FROM openjdk-8u111-jre
-COPY target/Suma.war .
-ENTRYPOINT java -war Suma.war
+COPY deploy/Suma.war .
+ENTRYPOINT java -jar Suma.war
+EXPOSE 8080
